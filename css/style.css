@@ -666,8 +666,13 @@ body footer .wrapper .container-header .footer-list ul li a {
 }
 body footer .attribution {
   margin-top: 5rem;
-  font-size: 10px;
+  font-size: 11px;
   text-align: center;
+}
+@media (max-width: 600px) {
+  body footer .attribution {
+    font-size: 10px;
+  }
 }
 body footer .attribution a {
   color: hsl(228, 45%, 44%);

@@ -395,7 +395,6 @@ body {
       .wrapper {
         display: flex;
         align-items: center;
-        //justify-content: flex-end;
         position: relative;
 
         .left {
@@ -619,8 +618,12 @@ body {
 
     .attribution {
       margin-top: 5rem;
-      font-size: 10px;
+      font-size: 11px;
       text-align: center;
+
+      @include mobile {
+        font-size: 10px;
+      }
     }
 
     .attribution a {
