@@ -1,0 +1,50 @@
+@use 'media-queries' as *;
+
+.btn {
+  border-color: var(--White);
+  padding: 1rem 1.3rem;
+  border: 2px solid var(--White);
+  border-radius: 25px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: var(--Font-overpass);
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &-primary {
+    background-color: var(--White);
+    color: var(--Light-red);
+
+    &:hover {
+      color: var(--White);
+      background-color: var(--Very-light-red);
+      border-color: var(--Very-light-red);
+    }
+  }
+
+  &-signup {
+    @include mobile {
+      background-color: linear-gradient(to right, var(--Very-light-red), var(--Light-red));
+    }
+  }
+
+  &-secondary {
+    color: var(--White);
+    background-color: transparent;
+
+    &:hover {
+      color: var(--Very-light-red);
+      background-color: white;
+    }
+  }
+
+  &-login {
+    color: var(--White);
+    background-color: transparent;
+    border: none;
+
+    @include mobile {
+      color: var(--Very-dark-blue);
+    }
+  }
+}
